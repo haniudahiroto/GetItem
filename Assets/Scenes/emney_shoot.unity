@@ -387,7 +387,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4a1893fd4971b864f9c00d2e63e9dbc9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -539,7 +539,6 @@ GameObject:
   - component: {fileID: 537335578}
   - component: {fileID: 537335577}
   - component: {fileID: 537335581}
-  - component: {fileID: 537335576}
   m_Layer: 0
   m_Name: Item
   m_TagString: Item
@@ -547,19 +546,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &537335576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537335575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b32ec158274abb54db0e6c099ad8dcb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: "\u7403\u4F53"
 --- !u!135 &537335577
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -593,7 +579,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e554a66117137f94d8d7fc684e83cede, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
