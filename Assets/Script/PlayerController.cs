@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
 
     // 近くのアイテムを格納する変数
     private GameObject nearbyItem;
-
-    // アイテムを拾えるかどうかを示すフラグ
     private bool canPickUp = false;
+
+    public GameObject itemTextUI; // テキスト表示用のUIをアサイン
 
     void Update()
     {
@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
             // 近くにアイテムがある場合、それを格納し、アイテムを拾える状態にする
             nearbyItem = other.gameObject;
             canPickUp = true;
+            itemTextUI.SetActive(true); // テキストを表示
         }
     }
 
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
             // アイテムから離れたので、近くのアイテムをクリアし、アイテムを拾えない状態に戻す
             nearbyItem = null;
             canPickUp = false;
+            itemTextUI.SetActive(false); // テキストを非表示
         }
     }
 
@@ -60,5 +62,6 @@ public class PlayerController : MonoBehaviour
         Destroy(nearbyItem);
         nearbyItem = null;
         canPickUp = false;
+        itemTextUI.SetActive(false); // テキストを非表示
     }
 }
